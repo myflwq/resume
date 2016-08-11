@@ -1,0 +1,310 @@
+@keyframes music{
+		0%{
+			transform: rotate(0deg);
+		}
+		100%{
+			transform: rotate(360deg);
+		}
+	}
+@-webkit-keyframes music{
+	0%{
+		-webkit-transform: rotate(0deg);
+	}
+	100%{
+		-webkit-transform: rotate(360deg);
+	}
+}
+@keyframes arrow{
+			0% {bottom:0.2rem;opacity:1;}
+			50%{bottom: 0.5rem;opacity:0.3;}
+			85%{bottom: 0;opacity:0.1;}
+			100%{bottom: 0.2rem;opacity: 1;}
+	}
+@-webkit-keyframes arrow{
+			0% {bottom:0.2rem;opacity:1;}
+			50%{bottom: 0.5rem;opacity:0.3;}
+			85%{bottom: 0;opacity:0.1;}
+			100%{bottom: 0.2rem;opacity: 1;}
+	}
+*{
+	margin: 0;
+	padding: 0;
+}
+html,body{
+			font-size: 100px;
+			margin: 0;
+			padding: 0;
+			width: 100%;
+			height: 100%;
+			overflow: hidden;
+			font-family: "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif;
+}
+.swiper-container{
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+.swiper-slide{
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	position: relative;
+
+}
+#musicBtn{
+
+		display: block;
+		width: 0.6rem;
+		height: 0.6rem;
+		position: fixed;
+		margin: 0.04rem;
+		top: 0.3rem;
+		right: 0.3rem;
+		background-image: url(../images/music.svg);
+		-webkit-background-size: 100% 100%;
+		background-size: 100% 100%;
+		z-index: 100;
+	}
+.music-animation{
+		animation: music  linear 2s infinite ;
+		-webkit-animation: music  linear 2s infinite ;
+	}
+p{
+	color: rgb(136, 136, 136);
+	font-size: 0.45rem;
+	text-align: center;
+	line-height: 1rem;
+	margin: 0;
+	padding: 0;
+}
+ul li{
+	list-style: none;
+	float: left;
+}
+#arrow{
+	display: block;
+	position: fixed;
+	z-index: 5;
+	bottom: 0.7rem;
+	left: 2.85rem;
+	width:0.7rem;
+	height: 0.7rem;
+	background-image: url(../images/箭头.png);
+	-webkit-background-size: 100% 100%;
+	background-size: 100% 100%;
+	animation: arrow  linear 2s infinite;
+
+}
+/*第一页*/
+.w1-4{
+	position: absolute;
+	top: 0.8rem;
+	left:1.4rem;
+	background-image: url(../images/cover.png);
+	-webkit-background-size: 100% 100%;
+	background-size: 100% 100%;
+	width: 3.6rem;
+	height: 3.6rem;
+}
+.w1-1{
+	position: absolute;
+	top: 4.5rem;
+	left:0;
+	width: 100%;
+
+}
+.w1-2{
+	position: absolute;
+	top:5.5rem;
+	left:0;
+	width: 100%;
+}
+.w1-3{
+	position: absolute;
+	top:6.5rem;
+	left:0;
+	width: 100%;
+}
+/*第二页*/
+.w2-1,.w3-1.w4-1,.w5-1{
+	position:absolute;
+	top:0.8rem;
+	left:1.59rem;
+	width: 3.12rem;
+	height: 2.16rem;
+	background-image: url(../images/personal.png);
+	-webkit-background-size: 100% 100%;
+	background-size: 100% 100%;
+}
+.list{
+	margin-top: 2.96rem;
+	left:0;
+	background-color: rgba(250,169,51,0.5);
+	width: 90.46%;
+	height: 1.32rem;
+	padding-left: 4.68%;
+	padding-right: 4.68%;
+	overflow: hidden;
+}
+.list li{
+	color: #fff;
+	text-align: center;
+	font-size: 0.43rem;
+	line-height: 0.55rem;
+	width: 1.24rem;
+	height: 1.12rem;
+	padding: 0.1rem 0.1rem;
+
+}
+.nav{
+	background-color: rgba(256,256,256,0.3);
+}
+.w2-3{
+	margin: 0 auto;
+	padding-top: 0.5rem;
+	width: 84%;
+	height: 7.08rem;
+	color: rgb(136, 136, 136);
+	font-size: 0.41rem;
+	line-height: 1rem;
+	text-indent: 1.25rem;
+}
+.w2-3-1{
+
+	height: 1rem;
+	background-image: url(../images/个人.png);
+	background-repeat: no-repeat;
+	background-position: left center;
+}
+.w2-3-2{
+	height: 1rem;
+	background-image: url(../images/qq.png);
+	background-repeat: no-repeat;
+	background-position: left center;
+}
+.w2-3-3{
+
+	height: 1rem;
+	background-image: url(../images/电话.png);
+	background-repeat: no-repeat;
+	background-position: left center;
+}
+.w2-3-4{
+
+	height: 1rem;
+	background-image: url(../images/邮箱.png);
+	background-repeat: no-repeat;
+	background-position: left center;
+
+}
+/*第三页*/
+.w3-3{
+	width: 100%;
+	height: 60vh;
+	margin-top: 3vh;
+	color: rgb(136, 136, 136);
+	font-size: 0.45rem;
+	background-image: url(../images/8.png);
+	-webkit-background-size: 100% 100%;
+	background-size: 100% 100%;
+}
+.w3-3-1,.w3-3-2,.w3-3-3,.w3-3-4,.w3-3-5{
+	font-size: 0.3rem;
+	color: #000;
+	text-align: center;
+	width: 0.6rem;
+	height: 0.8rem;
+	background-repeat: no-repeat;
+	background-position: top center;
+	padding-top: 2rem;
+}
+.w3-3-1{
+	position: absolute;
+	top: 0.2rem;
+	right: 1.5rem;
+
+}
+.w3-3-2{
+	position: absolute;
+	top: 0.3rem;
+	right: 3.56rem;
+
+}
+.w3-3-3{
+	position: absolute;
+	top: 0.83rem;
+	right: 4.3rem;
+}
+.w3-3-4{
+	position: absolute;
+	top: 0.7rem;
+	right: 2.19rem;
+}
+.w3-3-5{
+	position: absolute;
+	top: 1.14rem;
+	right: 2.91rem;
+}
+
+/*第四页*/
+.inner{
+	overflow: hidden;
+	padding-top: 2vh;
+	width: 90%;
+	margin:0 auto;
+}
+.w4-3,.w4-4,.w4-5,.w4-6{
+	float: left;
+	width: 25%;
+	height: 11vh;
+	padding: 0.7rem;
+	color: rgb(136, 136, 136);
+	font-size: 0.35rem;
+	-webkit-background-size: 100% 100%;
+	background-size: 100% 100%;
+}
+.w4-3{
+	background-image: url(../images/4.png);
+}
+.w4-4{
+	background-image: url(../images/5.png);
+}
+.w4-5{
+	background-image: url(../images/6.png);
+}
+.w4-6{
+	background-image: url(../images/7.png);
+}
+/*第五页*/
+.w5-3{
+	position: absolute;
+	bottom: 0rem;
+	right: 5%;
+	width: 3.76rem;
+	height: 42vh;
+	padding: 6vh 0.8rem;
+	color: rgb(0, 0, 0);
+	font-size: 0.35rem;
+	background-image: url(../images/person.png);
+	-webkit-background-size: 100% 100%;
+	background-size: 100% 100%;
+}
+.w5-3 span{
+	font-size: 0.26rem;
+}
+.w5-3-1,.w5-3-2,.w5-3-3,.w5-3-4{
+	float: left;
+	width: 48%;
+	height: 1.48rem;
+	padding-top: 0.4rem;
+	font-size: 0.3rem;
+
+}
+.w5-3-1,.w5-3-3{
+	padding-right: 2%;
+	text-align: right;
+}
+.w5-3-2,.w5-3-4{
+	padding-left: 2%;
+	text-align: left;
+}
